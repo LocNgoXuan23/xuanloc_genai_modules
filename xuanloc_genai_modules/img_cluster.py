@@ -8,7 +8,7 @@ from sentence_transformers import SentenceTransformer
 import faiss
 
 class ImgCluster:
-    def __init__(self, top_k=50, dis=0.01):
+    def __init__(self, top_k=100, dis=0.01):
         self.model = SentenceTransformer('clip-ViT-B-32') # clip-ViT-L-14, clip-ViT-B-16, clip-ViT-B-32
         self.top_k = top_k
         self.dis = dis
